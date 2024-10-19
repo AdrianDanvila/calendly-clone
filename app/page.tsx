@@ -106,7 +106,7 @@ export default function Home() {
         <TestimonialsCarousel />
       </div>
       {/*How it works */}
-      <div className="mb-24">
+      <div>
         <h2 className="text-3xl font-bold text-center mb-12 text-purple-600">
           How it works
         </h2>

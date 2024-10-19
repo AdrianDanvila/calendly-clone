@@ -1,6 +1,7 @@
 import React from "react";
 
-const AuthLayout = ({ children }) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const AuthLayout = ({ children }: any) => {
   return <div className="flex justify-center pt-20">{children}</div>;
 };
 
