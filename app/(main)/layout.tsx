@@ -5,8 +5,8 @@ import React from "react";
 import { BarLoader } from "react-spinners";
 import { Calendar, BarChart, Users, Clock } from "lucide-react";
 import { usePathname } from "next/navigation";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/AppSidebar";
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: BarChart },
@@ -23,6 +23,7 @@ const MainLayout = ({ children }: any) => {
       {!isLoaded && <BarLoader width={"100%"} color="#36d7b7" />}
       <div className="flex flex-col h-screen bg-blue-50 md:flex-row w-full">
         <AppSidebar />
+        <SidebarTrigger className="sticky top-20 bg-transparent " />
 
         {/* Main content */}
         <main className="flex-1 overflow-y-auto w-[100%] p-4 md:p-8">
