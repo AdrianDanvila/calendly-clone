@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -20,7 +22,7 @@ const Page = () => {
   } = useForm({
     resolver: zodResolver(useNameSchema),
   });
-  const onSubmit = async (data) => {};
+  const onSubmit = async (_data: any) => {};
 
   useEffect(() => {
     setValue("username", user?.username);
